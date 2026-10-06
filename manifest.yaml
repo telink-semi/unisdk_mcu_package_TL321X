@@ -1,0 +1,205 @@
+package:
+  name: TL321X
+  version: 0.1.0
+  vendor: Telink
+  description: TL321X core (TL321X)
+  sdk: ^0.3.0
+core:
+  name: TL321X
+soc_series:
+- name: TL321X
+  socs:
+  - name: TL3218X
+    case: QFN64
+  - name: TL3219D
+    case: QFN38
+  - name: TL3218B
+    case: QFN52
+  - name: TL3218K
+    case: LGA42
+  - name: TL3218E
+    case: QFN32
+  - name: TL3218F
+    case: QFN28
+  - name: TL3215C
+    case: QFN48
+  boards:
+  - name: TL3218X_EVK
+    socs:
+    - TL3218X
+integrity:
+  packages/TL321X:
+    drivers/errata/CMakeLists.txt: 4f84a169b743538f52969e46b6fd959b7b30ae3c9a424164da6d3b00b10d5be5
+    drivers/errata/tlk_core_errata.c: 21c515916a508ee0623dade0971ba77319f63f82dfba9c473ff559304240e29d
+    drivers/errata/tlk_gpio_errata.c: 2315f6a393bfde2f9e485d5ea7397b9e84efb2102ed40a67fe39c08aef90990d
+    drivers/errata/tlk_wdt_errata.S: f2b427f3651b2eea2d15fe181ed04b46751cca31d6cba8c6033431b7c3910a58
+    drivers/tlk_adc.c: a4810215f8fd1c822bbc84c0fc22d64f6815e1bf5f4f21e8a0cbe8c29fc4bcc4
+    drivers/tlk_analog.c: 1f3b7ee0feadf7db2c158583250c683a7c47d46938816a79dc53169fb334a5a2
+    drivers/tlk_audio.c: 21542f8cfc5ecdd07ca73935e5ff671f28fe3e2fbf9190c7cb5b191082f0ab24
+    drivers/tlk_clock.c: a6035fc56f4302910b7d0b7226c1f5c0604b54c6bdabd9e722ad255a2522a53e
+    drivers/tlk_debug.c: 05affcc7bb46d460d1b2eb911cbc39285e1ddc048559ba3ae92452fb29664c8d
+    drivers/tlk_dma.c: 8f153114e3cfdbe122ba99cce26995a27895bf5c1d5dc1c032a3a525d0dae54f
+    drivers/tlk_gpio.c: 9b1d448bb71b54b390a810504bd065a47d3f0980ceea835c4f75c46ae858157c
+    drivers/tlk_i2c.c: f13851b42f0fcc596b10320f8b96b3efd7d6b43f4f18078a68006542d331d1ac
+    drivers/tlk_i2s.c: f1d27defcca2b574f1f1f11d57ecc8766e1dff5eae20caeed456c36aaf2724fd
+    drivers/tlk_pm.c: 8cdcd377a2ff04ed90a4e9e9e30cd522e76ff0d69b1c7f162580650375630a2a
+    drivers/tlk_power.c: 45ab3fb73e344482d28666be64427a54f96e7c251af5d8a64fb3d9d45d06f327
+    drivers/tlk_random.c: a657cf139c2caa96229411d13230e0b9c084c22e09d21d5cdca05d1263b8b589
+    drivers/tlk_spi.c: c09eb700a86d7868410ff87267b15d93ce2a1e6fb689807ef8399287f2f5e800
+    drivers/tlk_stimer.c: 9c0195f3e5a2e8e8df31a7a90baa8dfc8845d062e435ca2d08f02650c8eef90c
+    drivers/tlk_uart.c: 985e57fff6b238afefa8af101ea0658af53dd0218b8946bea84a7ae7ed79332a
+    drivers/tlk_usb.c: dc3d247f07058b6919b95845bdfa7610048c214c66fcc86b14a514a5d1c21e6b
+    drivers/tlk_watchdog.c: 1a160e03e6641422a46aa7ce673aec735f332ede090f465b01c40cefeb1d4e1d
+    Kconfig.core: e3a4b522837255da1d787470b68aa8e895a03b9c8cb3a58daefc305fab95c587
+    properties/tlk_adc.h: 00ded8600c012dee29b39de09b91810be590ac747a2978b3c627d87f69038794
+    properties/tlk_audio.h: 626d9c4ab8a9627898539cff4475adaa2b216b45222e3799a779b0979fe18a13
+    properties/tlk_chip.h: d67cbd8e0fb70a8ccdbde0a16f91eeeb68a3a15410b61dd8014f8417ee721b9b
+    properties/tlk_clock.h: 7f475219e6ab42a03e57d9441dc4eb4b99e5b0dde7b3263ba3bc2e98c438c158
+    properties/tlk_dma.h: 747bbbf0d136fbd2affe80d791689f8bd91a0732fb33e1c8967fa1917de0c68a
+    properties/tlk_gpio.h: bc80d737b25095aca9ae876f196b6b84b433b4d592c4921ae5149ceb2a718752
+    properties/tlk_i2c.h: eef2a67aa73cfb7f1e803c868e10288c9f0c55539e6f35cda8db0bf6dbcb8773
+    properties/tlk_i2s.h: 6334cf137f12f596214706f76a4732e40f089572ed5d222d2907a56a4e5d13c9
+    properties/tlk_jtag.h: 240837473db335b78fac9c1648bfa1f4e7f5638563d4828a8a6a0f052908470f
+    properties/tlk_mtimer.h: b14e1852f38acc1b1d2c039fa6297dc5a3c988efced9a5b416ca76d58237efec
+    properties/tlk_plic.h: 8d409c0b816b1e80dd1e8af5b7790995c71f1f80061c89979d9c955bfb7434b9
+    properties/tlk_plic_sw.h: b8f7b1158a40970b7e542416e3466a1ed843af43067a3e1b810f5cdacc5cff11
+    properties/tlk_pm.h: 0523bcc77a9136b83cf3f67dff09917a2719894a26cc64b5dd195b8e092a4607
+    properties/tlk_pmp.h: 84d6496b4aad46bbeaadfcacebcb0d1a6fe77d8abb0aea7e9c4f5328093b0cd9
+    properties/tlk_random.h: fb8b7e81b7557f92d42315e553c5122b410843f23976d4860ac9ff98eedd3729
+    properties/tlk_spi.h: cc83d7cd14061cdb0be5e3205cd76bee2d9be87d932e88ee2d4ddeabbd730460
+    properties/tlk_stimer.h: cabb0ea07e92c1bf4b4b50d0913944517e237f5a72fd9684961771def6c42cc5
+    properties/tlk_trap.h: 45f7ca133c84e1c5df1005cdc87797840515c3cecf5021819c523906c2f4766b
+    properties/tlk_uart.h: f3630d823b996b956c0620d3a38ce83512081b35f5f5abbecb4ef1877b6a9f71
+    properties/tlk_usb.h: dbabe2e8280f6f8de4bef61e3578b4de4f3b3346bd67a9424312f5283b0cd496
+    registers/tlk_adc.h: e18699fd931dead5eeb4308db780283299d872f61ca9077e42f981d5910c50ab
+    registers/tlk_analog.h: 4478cddef1aeeae30dbb70768a0a0729ddf691fbb062c73e3dae0e9b0c4264d4
+    registers/tlk_chip.h: 093fe0b1e40b5056103b46f2eeafe681201b186371bff4d37db3aca2387b246f
+    registers/tlk_clock.h: 09312daa26c45cbff1dc97dc9de4292fef995d5e6e9603ee9881778969a50cfb
+    registers/tlk_dma.h: a8f97e63bdcc9c75c2cecc5cf1c04d44cc7a919f8b77496d91a474b7586829c5
+    registers/tlk_gpio.h: 1336442ef38aa4c44e452ec4590657174f8050ee20f0c2a319f841fb20b9975b
+    registers/tlk_i2c.h: 8af48d97642df82301f02bf4f14870f8aef416360068c31e9ed26531bf08b05e
+    registers/tlk_mtimer.h: 72033ad0d8bf52162312413e0e02de1e70b2f4ab288f33ad3db3e18627d80880
+    registers/tlk_plic.h: 8ba4e7bf3c7e69d25f7ecb084b6c1d65d0bff73d9111f12e868b53a27506dca3
+    registers/tlk_plic_sw.h: 3717cc8e6f8405e97e4a326bdbaaed04b03974e9095b0db95acffe7f4ae85a15
+    registers/tlk_spi.h: a71e11180fceb9012ae7fdc6d46a45931ae889e2d33655294952a12f3b74659a
+    registers/tlk_stimer.h: 3bd211864c3c439b5282e1883b7b879e140f730c7a76b3f91128701e6e6a1f23
+    registers/tlk_timer.h: 131e612e3cad4fa06ca44340bb002dcadd6152dbbb9c0724001f17c3f96fab52
+    registers/tlk_uart.h: 691b238d95a7d956480e79769127014a0ae0f917d60479fcb268f8b37f4f9dfb
+    registers/tlk_usb.h: d2faeb26198ba8b5c05fe03f47d4e2b8845632844cceeb3f9859677a5d0d8ad7
+  packages/TL321X/soc/TL321X:
+    CMakeLists.txt: 2a5d869fe1783df87f53486267beca2ffb68fa656117ec5f47f732d2606cf369
+    crypto/CMakeLists.txt: e4318eb31c9fdb2a52aa9275944487874f3662899774e423329f08885c7a6329
+    crypto/include/crypto_common/common_config.h: 98a424293b64f41d4d033a589de9f314c96bb1072c6095e40f003296fcb74bca
+    crypto/include/crypto_common/eccp_curve.h: 465d52910239db8553d3b5b7381e693344f680ab577324d150e5d5a67d80d430
+    crypto/include/crypto_common/utility.h: 7d687ace80c02925ead8eca251a50eb6eaf6b1bbfacb49df68f0db4487e7dea6
+    crypto/include/hash/hash.h: 4796ea88e755559aac6efa04d58b4a4d486c9016d51c13e9043d4afa8913721a
+    crypto/include/hash/hash_algorithm.h: 3a2dfeca5cbf3b42dfbaa6e512bd61d1344fdfe4bb7969fc8fed17d5d32dd943
+    crypto/include/hash/hash_basic.h: 3ac40ea9494bc93d0479075177afe65c3c8008c6302c7ae41774c10600160822
+    crypto/include/hash/hash_config.h: 7b9dd8a9d5890e0589385ec4e2d1dd5011649010e213920fc20127f827208a35
+    crypto/include/hash/hash_kdf.h: 8195f61a218e086fe8ec40f58358b7d3c301eb88170519bf02bef9450925baa5
+    crypto/include/hash/hash_portable.h: e92c83c346323e374eb4c58d2751e8c73c84a2181d16f6b210a31e1738dfbddf
+    crypto/include/hash/hmac.h: 6105656e05af84da110bf1fed77981a94db5ada43ed9883590440aefaadf1a4d
+    crypto/include/hash/hmac_md5.h: a42b7550a7f2af707f7bb65ed8bc08e6129188f9bacd078d676c0e97d70be380
+    crypto/include/hash/hmac_sha1.h: 828b90532df1f5e2e70c07c4347f28a65beda4c63bc854f2f510b70fdaa2113c
+    crypto/include/hash/hmac_sha224.h: c43a23e75a65b4be3df3e1d090be5122259f2e286563fa22d308520a159a866d
+    crypto/include/hash/hmac_sha256.h: e041ed9703693ae2e67f582d726d8eba71c4129651a53083fc0f6acd341cc4c8
+    crypto/include/hash/hmac_sha384.h: 391d2d95216567ca771493325d99cdb5ccc96a45ec6e160502f383f9814ddf7f
+    crypto/include/hash/hmac_sha512.h: d3a2fb315dd35fd45d9d92ba0b4fb08ccb77da4b9ed11e2363a13d734c5ca4c3
+    crypto/include/hash/hmac_sha512_224.h: 1bcc3742b47af2afcdf9a4a55c3e4a9bb1929d7705caff69505304deaae90d3d
+    crypto/include/hash/hmac_sha512_256.h: d256275c429ab00a483c76add53068bc2bc5cde63b5ce0b1785174cc315be9d9
+    crypto/include/hash/hmac_sm3.h: 74423e9953cd2c63cee19322e652f3a3cd89b14bb53cb5976fc673fd680dabe1
+    crypto/include/hash/md5.h: b7a5dab0e35dd136b7dd419cbf6990406040f9edd1e69fa4143771e51720a2dc
+    crypto/include/hash/sha1.h: b3a1783f787697ab83edd6fc7616f5fe8ad3d612a4731e3dd4a894db4c6a0c90
+    crypto/include/hash/sha224.h: 4c12cf9ab64a5e1ad84575307e9e40f74522ae357c97b51ebabc814d482f8098
+    crypto/include/hash/sha256.h: f94b01104d5f47385d190479dd39e37cfd85f9fc5204bcf369396feec952e506
+    crypto/include/hash/sha384.h: be572f21163b60e862ca7a0ddbd08febecfb79bcfaa72e1847989931c30f6d0c
+    crypto/include/hash/sha512.h: 40ae1811334177b8e27d77e3a4a17762377d54d20048749c90cd5387c3a1cfc2
+    crypto/include/hash/sha512_224.h: 74812e7ffee4079cf9add62886b31625a8c041dd93939f4299860bd1552bdd55
+    crypto/include/hash/sha512_256.h: f170cc27cf1a6183949f83939fd04cac5bf5b1ee413fce6184b6821b16002804
+    crypto/include/hash/sm3.h: 4377691ca6bb2428c325563cac1c69f7116bbfc318f4fe14d32aa897be48d329
+    crypto/include/hash/soft_sha384_sha512.h: 329ba7f9925b67f384421d0cb622c5ac589bcabacaa42a990031f3acecf19421
+    crypto/include/pke/dh.h: 0632dd137fccec4575a87e62468749ae393705dca066302476e958c0a0f9bdcd
+    crypto/include/pke/ecdh.h: 5c47f2d213155cd827989457fdc4e561f322ffb58afe5b74749cbf07385d454e
+    crypto/include/pke/ecdsa.h: dcdb0e15109859c82972d9f9397fb309978f534ccea45136e81586f98ea89025
+    crypto/include/pke/ecies.h: 9d0aafaeba0253a03ecfa9964e6c8b475cad10fd54435294388aa8a426914f60
+    crypto/include/pke/ed25519.h: 9d2249f5c469d7ceeed0e3a62adbc468383acce95070f580c7eead72b7b14714
+    crypto/include/pke/jpake.h: 15dc6501686a95357b57f2494a7209bec4e2d8bc91c4bc9d2b8dd056b240c249
+    crypto/include/pke/pke.h: 125573520951ca04da39d791ccc362c79b7b2c2e593541eb7ca359d199a9e8a1
+    crypto/include/pke/pke_algorithm.h: 07bada3091a6ef0ca20298668ae67913dc428995b4c3b9c7e2ba556402712e4c
+    crypto/include/pke/pke_common.h: 55268dd98b84569a058d0ece8198d6e6d509ee65a5f09ccac59005b9160de178
+    crypto/include/pke/pke_config.h: 19c48c6d14f38d38bd7095cd3711e3f21cdc02d397dd22f30883eb6bde04f043
+    crypto/include/pke/pke_portable.h: e88ff78a57c3c7fabfc07e3163f1eb7b5b5f76e1e0ddbf08249549e732738894
+    crypto/include/pke/pke_prime.h: 41057f1a9b1a8185165a857709c6183e48be3f4a38870357a06bd69b592122b8
+    crypto/include/pke/rsa.h: d3cbf69901e87d1fb6d55eee30859ed3a679af68fe8dcb40e38a124387707094
+    crypto/include/pke/sm2.h: 1f65a257b9d341c5909b11b12a648f33171c57fc25b1e7791636fd4f3562db35
+    crypto/include/pke/sm9.h: f669f7ba2f48a12caf1b58801da50583e980033dc17b521f0fc901b50249fa33
+    crypto/include/pke/x25519.h: 706ca7784ff523a8fcdcc5f26a6aba2f66c2e57e77951d4eebf8b10f0abd40e6
+    crypto/include/ske/ske.h: 63933ae6c2b3907fcbef19d8063cfd4fed8274ac18d082e99eee4253f05e1038
+    crypto/include/ske/ske_algorithm.h: 76b986472f546effe81e76a6b849acfe242f48f261717fecd2fb593946004b88
+    crypto/include/ske/ske_basic.h: e0101db0b4b6167301244d72b9f9a0c7b8a597369e857885b33104201b0c196c
+    crypto/include/ske/ske_cbc.h: f4ae27a647da9d56af522d0cf8c6c9ccec475208f9fb32a3610f30d785e6e2b8
+    crypto/include/ske/ske_cbc_mac.h: 36d9021fdfce9e5665701c262fd97eb7a6e64308082f10c45c2cecee231fbc96
+    crypto/include/ske/ske_ccm.h: 8a4aea7541d96033eb59e8370b00896264c99ae72c9ee2cf024ed5ed423811ca
+    crypto/include/ske/ske_cfb.h: cd7625c1803b3cd9e594780f373e6d63e98f90528fe513612a217a8a7a4ad906
+    crypto/include/ske/ske_cmac.h: d71ed9a83fa75902c7531dde46dc8813603212ac31fe864f9e441faf6c9705fd
+    crypto/include/ske/ske_ctr.h: 00d4f464177cedd26b7b032c84c4cbfac427a9773b8bbc768350cfbd188cd08f
+    crypto/include/ske/ske_ecb.h: 40bb9a59f719f5e4707f17099790e6cb4b706480ce5d70d29d5a527d341ad5f9
+    crypto/include/ske/ske_gcm_gmac.h: a8012a7570273b6ebf4a09117afc9b8e53ea6a2edb52bb10dd7293e70cbd734b
+    crypto/include/ske/ske_ofb.h: 588d588f238444f09c3d9645288807e6b47ba07e7bee4d6b9cfd852eb96a2906
+    crypto/include/ske/ske_portable.h: f81634a71712b212f001ac89ff3e9752bab0a8d6fc4666eaa7251c7581e3fb68
+    crypto/include/ske/ske_xts.h: 4dc343c4673b2ca6b7ed7f8d1dedf3a4fd217223a950dc7cdb68cbc720140e92
+    crypto/include/trng/trng.h: a7aab7ea6ca0878c0e81da4bce7c36d98c7e37f7ac28e10bd1ccd8eb292cfba1
+    crypto/include/trng/trng_algorithm.h: 78aa9546850d15d5cc3d969c991762d58524ec8c280135fe18b7eb528be6c4b4
+    crypto/include/trng/trng_basic.h: e4d7f1f97c6664d5b5c1e83e809ba365f48455cf6152184779a4a41449cfad1a
+    crypto/include/trng/trng_config.h: 9656c35a2fd8285ff9e7abcd124f9ca260168d037be1bce9d553dccb2f3e2a62
+    crypto/include/trng/trng_portable.h: 218a186ef6884d26bd69eae78c7ea8a00c2599961562322d5aab1b65493834dc
+    crypto/zephyr.cmake: 41a119e538a00516003963c7954778af540040ea24e5b78be3564273f5a34dde
+    drivers/CMakeLists.txt: d6bf46865cab5a1380e80cfe97ccf20fca2c98f449cfb81be7fd0f75780a462e
+    drivers/include/tlk_advanced_stimer.h: bdb9bc5acdfcfd62f63a83f1bda2909ce4e5fe7466bd4d15d6dbf74809118cdc
+    drivers/include/tlk_mspi.h: f7ca70e6bd14746d7c150d64222e6317fb39f74a660d7a0591e7e3f821069248
+    drivers/src/tlk_mspi.c: 5f46cd440d040fab9471028c70df9d51860aab962e1b6714e6af5c607ac784d7
+    Kconfig.soc: 5c46f44a7b8b4bdb60486adec9b3a7c08ff21516b95c3aab7b1ffc3d56d73d97
+    pinmux/function.yaml: 4b7603cab658ef8cc06b7ab2e8e36d109db671a9ef87a83cd339c8415f3deafe
+    pinmux/layout_lga42.yaml: 91f680911383ecffe74ce8e5c2aeeaf7967f87f4561e496c8c7e907ca81a3681
+    pinmux/layout_qfn28.yaml: 9c88dd87176607d8dc7da6c01952b72e5e226f42ace3ae16d343acf2674ac673
+    pinmux/layout_qfn32.yaml: 4ae3133cdb1032318f3dbac95a0de2614fdfd579914348a0e3658f2bbd09a8c1
+    pinmux/layout_qfn38.yaml: aac79dfbaa66ca7f25df25b42a265029574438244dee950813d2650aa683f3c1
+    pinmux/layout_qfn48.yaml: e74fab03101e7633f1e81430fb3a38eaa1985057e733f20a0618e86f056a8297
+    pinmux/layout_qfn52.yaml: 64031d305facf29f6a0ff29e4255e3aa6df5d8511f87812bf694e5531a9ebb1e
+    pinmux/layout_qfn64.yaml: 0356df9590cc97825edd8453853335ec35db7bfc0b51130d58f3941b30df2e6f
+    pinmux/pinmux.yaml: cce2f3d94cae80183de50cf0340d19ee3174d10edeb357578ed205dd3d4c2e69
+    pinmux/pinmux_lga42.yaml: 32e708dcaeaed14aa9ce1a4cdfbe1ad49be301d4bebcfe6b775778af05e3f2b3
+    pinmux/pinmux_qfn28.yaml: cd9602c3f2479a875649f3eac853b15e6576d3dc870bdd0951ff4d5b7d1d0d8f
+    pinmux/pinmux_qfn32.yaml: 0d887c306e1566de4e0eb57fcca36c6fb41e0ed2ab5bb94de6f1d9c2dcfd7f29
+    pinmux/pinmux_qfn38.yaml: cee1804d07a46917da461e31fb760a482bde6b47c477ebfc3ec2c9adecc793b0
+    pinmux/pinmux_qfn48.yaml: 8774860a1e9157276657894737ec8c38b4693b7dc89e92636db4b754c677f3d4
+    pinmux/pinmux_qfn52.yaml: f71b91f9a6d732d46e2995fa9e4af53a06f725fb097f6680e8946efab0fd04ec
+    pinmux/pinmux_qfn64.yaml: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    properties/tlk_crypto.h: e6795136999ed2b84c4a0c9d0eb770d176b96323c7e56040718a4877f1a4abdc
+    properties/tlk_rf.h: ac3289979291639c3807afe47dca20ffb4aa7657a3817bcc16616f1ae90d1e38
+    registers/tlk_adc_reg.h: f6eb5744a294f0e24f02ebe8f6d341ba5b1e02a3a6a8e0f52f70e968635fd494
+    registers/tlk_analog_reg.h: b5fb8e7276bcaac4376286b2b544828bed937c96958f9b5ab3167048f3c45818
+    registers/tlk_audio_reg.h: 6cd22a0cb0cc03e47173947978551b1674b9e4e92a7fbf9e273a466a26e5def5
+    registers/tlk_core_reg.h: df66fed957ea040ac44e163666f611d162bac5c75dce861817226ce7e7969c74
+    registers/tlk_hash.h: 23783f02b7b1b6625a3c42e98e9e99eb8f2dc26216c0573536f81720d9d241d0
+    registers/tlk_hash_reg.h: 3e433bb83575e258aaac81f171faeba64638d4ab8321fccaf41b32248dbabf0a
+    registers/tlk_ir.h: d4881c794d33bcc3b1a62712cc69f4ca5a03d3047576864cac0037ac1a0c8667
+    registers/tlk_mspi.h: c74afd0372755dbaf6234f8323b030340b3419db0ba25fa12aefbf3153a2a96e
+    registers/tlk_mspi_reg.h: 8a779976810ec270b63a72bc0b9b0a4c8364552b8973efffb3cdcfd7f9e4d7c9
+    registers/tlk_pke.h: d625ad6ba5ded5f814dd92c9c9980af148e0a827cca4e6492ec964812f2a7918
+    registers/tlk_pke_reg.h: 49b1c5707bd57d6589ee0fa681b45bba534708ddd0f8b5b548b4d841cea1a82b
+    registers/tlk_pwm.h: a1a95995e00e254f71299fe6713149b555918103f7ba3ac978f3b2f227e4ab2b
+    registers/tlk_qdec.h: 630e6179aeb6f8e7a1d2b5e104de2f0042a2398502a5e8e06ac2d16126cb9dc8
+    registers/tlk_rf_reg.h: b55e002a27aff21a4d4beea60ca91dbc427bf5598f0d97eeb22ba2caddcc5494
+    registers/tlk_ske.h: bd60dd69e083ee5ec39a9fc26c872563488b6e10d93453071bc71a1a6dfe8dac
+    registers/tlk_ske_reg.h: 84f2569dbf2e9c39171c81ac52d4d2c979769d4bbead872b39b2d8008dc7058c
+    registers/tlk_soc.h: d2f8aacd9abeca4f6e1598e7b120a3a9f6d54f206662c6cf3e0dc32a7a5a1df7
+    registers/tlk_spi_reg.h: 652459e182c684ccbf7f79331f5930fdc57c819d16a16a4d96544a2309948929
+    registers/tlk_swire.h: 2d2839a8b133d3c2cc44ac83fdc24ada23bccb26e1fa41906be3e1061afbe079
+    registers/tlk_timer_reg.h: 8f51640c1a1a8558b3c63e53eb463e53775286d2c9922aa8b5d836b4a70958dd
+    registers/usb_reg.h: 66dc87e7d4ade49f0a6f9c20d5be1f8f51e29afd92743330c9188c01931c2254
+    zephyr.cmake: a1f9323c199a3c47482fca6d8acdb7f025abc094d9499cf75eb82c573c1d7bf9
+  packages/TL321X/boards/TL3218X_EVK:
+    Kconfig.board: ac9aaba04f94e378cbcaab78594a4b36bed03af8917ac152ca721945683005a2
+    pinmux/function.yaml: 2e5c2db7de889645c07c8c9e0b70325f6adc2a9dab563c3070dc631121e03095
+    pinmux/layout.yaml: 5c41d916a27ba278828ff0e26c39320fd84755ee64499dcab9db1c8784c29cf6
